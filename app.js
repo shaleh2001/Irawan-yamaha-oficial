@@ -7,7 +7,7 @@ const products = [
 {
   name: "TMAX",
   category: "maxi",
-  price: "Rp 455.000.000",
+  price: "Rp 455.200.000",
   image: "https://www.yamaha-motor.co.id/uploads/content/2026012309055337214L79307.jpg"
 },
 
@@ -43,7 +43,7 @@ const products = [
   name: "NMAX NEO S",
   category: "maxi",
   price: "Rp 35.590.000",
-  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022021512553415943O51296.png"
+  image: "2025111019194058600Y79045.png"
 },
 
 {
