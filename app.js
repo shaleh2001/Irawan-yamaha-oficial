@@ -1,536 +1,543 @@
-const WA_NUMBER = "6281223805900";
+const WA = "6281223805900";
 
 const products = [
 
-  /* ================= MAXI ================= */
+/* ================= MAXI ================= */
 
-  {
-    name: "TMAX",
-    category: "maxi",
-    price: "Rp455.000.000",
-    cc: "560 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20260121105207TMAX.png",
-    official: "https://www.yamaha-motor.co.id/products/"
-  },
+{
+  name: "TMAX",
+  category: "maxi",
+  price: "Rp 455.000.000",
+  image: "https://www.yamaha-motor.co.id/uploads/content/2026012309055337214L79307.jpg"
+},
 
-  {
-    name: "XMAX 250",
-    category: "maxi",
-    price: "Rp70.015.000",
-    cc: "250 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025092412293259576G76761.png",
-    official: "https://www.yamaha-motor.co.id/products/"
-  },
+{
+  name: "XMAX 250",
+  category: "maxi",
+  price: "Rp 70.490.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/202601211337387306A11348.png"
+},
 
-  {
-    name: "NMAX TURBO",
-    category: "maxi",
-    price: "Mulai Rp39.460.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240130102419NMAX.png",
-    official: "https://www.yamaha-motor.co.id/product/all-new-nmax155-connected/"
-  },
+{
+  name: 'NMAX "TURBO"',
+  category: "maxi",
+  price: "Rp 39.460.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2025111019120360785H74074.png"
+},
 
-  {
-    name: "NMAX TURBO",
-    category: "maxi",
-    price: "Mulai Rp32.175.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240130102419NMAX.png",
-    official: "https://www.yamaha-motor.co.id/product/all-new-nmax155-connected/"
-  },
+{
+  name: "AEROX ALPHA",
+  category: "maxi",
+  price: "Rp 31.285.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2026020515031335833N50491.png"
+},
 
-  {
-    name: "AEROX ALPHA",
-    category: "maxi",
-    price: "Mulai Rp31.285.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20241218120333AEROXALPHA.png",
-    official: "https://www.yamaha-motor.co.id/product/aerox-alpha/"
-  },
+{
+  name: "LEXi LX 155",
+  category: "maxi",
+  price: "Rp 28.220.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2026012101353067003N34382.png"
+},
 
-  {
-    name: "LEXi LX 155",
-    category: "maxi",
-    price: "Mulai Rp28.220.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20260108110431LEXI.png",
-    official: "https://www.yamaha-motor.co.id/product/lexi-lx-155/"
-  },
+{
+  name: "NMAX NEO S",
+  category: "maxi",
+  price: "Rp 35.590.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022021512553415943O51296.png"
+},
 
+{
+  name: "AEROX 155",
+  category: "maxi",
+  price: "Rp 29.705.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2023041415280563814D66821.png"
+},
 
-  /* ================= CLASSY ================= */
+/* ================= CLASSY ================= */
 
-  {
-    name: "GRAND FILANO",
-    category: "classy",
-    price: "Mulai Rp28.960.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20230126102724FILANO.png",
-    official: "https://www.yamaha-motor.co.id/products/"
-  },
+{
+  name: "GRAND FILANO",
+  category: "classy",
+  price: "Rp 28.960.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2026012314263490145D59534.png"
+},
 
-  {
-    name: "FAZZIO",
-    category: "classy",
-    price: "Mulai Rp24.650.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20220119100630FAZZIO.png",
-    official: "https://www.yamaha-motor.co.id/products/"
-  },
+{
+  name: "FAZZIO Neo",
+  category: "classy",
+  price: "Rp 24.650.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2026012315293027645K32651.png"
+},
 
+/* ================= MATIC ================= */
 
-  /* ================= MATIC ================= */
+{
+  name: "GEAR ULTIMA",
+  category: "matic",
+  price: "Rp 20.240.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202604021124218894J.png"
+},
 
-  {
-    name: "GEAR ULTIMA",
-    category: "matic",
-    price: "Mulai Rp20.240.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20250211101232GEARULTIMA.png",
-    official: "https://www.yamaha-motor.co.id/products/category/matic/"
-  },
+{
+  name: "GEAR 125",
+  category: "matic",
+  price: "Rp 20.450.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2024031507431441417B35284.png"
+},
 
-  {
-    name: "GEAR 125",
-    category: "matic",
-    price: "Mulai Rp20.450.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116104022GEAR125.png",
-    official: "https://www.yamaha-motor.co.id/products/category/matic/"
-  },
+{
+  name: "FREEGO 125",
+  category: "matic",
+  price: "Rp 23.205.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202506091443425485Y97917.png"
+},
 
-  {
-    name: "FREEGO 125",
-    category: "matic",
-    price: "Mulai Rp23.205.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116104333FREEGO.png",
-    official: "https://www.yamaha-motor.co.id/products/category/matic/"
-  },
+{
+  name: "X-RIDE 125",
+  category: "matic",
+  price: "Rp 21.435.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025070409402252373C51406.png"
+},
 
-  {
-    name: "X-RIDE 125",
-    category: "matic",
-    price: "Mulai Rp21.135.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116104523XRIDE.png",
-    official: "https://www.yamaha-motor.co.id/products/category/matic/"
-  },
+{
+  name: "MIO M3 125",
+  category: "matic",
+  price: "Rp 19.200.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025051913533472814Q20921.png"
+},
 
-  {
-    name: "MIO M3 125",
-    category: "matic",
-    price: "Mulai Rp19.200.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116104700MIOM3.png",
-    official: "https://www.yamaha-motor.co.id/products/category/matic/"
-  },
+{
+  name: "FINO 125",
+  category: "matic",
+  price: "Rp 20.900.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202302210939153521B87826.png"
+},
 
+/* ================= SPORT ================= */
 
-  /* ================= SPORT ================= */
+{
+  name: "XSR 155",
+  category: "sport",
+  price: "Rp 40.845.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025012015110954865E18335.png"
+},
 
-  {
-    name: "R15 CONNECTED",
-    category: "sport",
-    price: "Mulai Rp42.975.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116105525R15.png",
-    official: "https://www.yamaha-motor.co.id/product/all-new-R15-connected/"
-  },
+{
+  name: "R15 CONNECT",
+  category: "sport",
+  price: "Rp 42.975.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2024072510414155568H76580.png"
+},
 
-  {
-    name: "MT-15",
-    category: "sport",
-    price: "Rp41.445.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116105915MT15.png",
-    official: "https://www.yamaha-motor.co.id/product/mt15/"
-  },
+{
+  name: "R25",
+  category: "sport",
+  price: "Rp 76.750.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025012015411993760O36900.png"
+},
 
-  {
-    name: "XSR 155",
-    category: "sport",
-    price: "Mulai Rp40.845.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116110134XSR155.png",
-    official: "https://www.yamaha-motor.co.id/product/xsr-155/"
-  },
+{
+  name: "MT-25",
+  category: "sport",
+  price: "Rp 67.150.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025012015192887371O6508.png"
+},
 
+{
+  name: "MT-15",
+  category: "sport",
+  price: "Rp 41.445.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025012015144954158N49912.png"
+},
 
-  /* ================= OFF ROAD ================= */
+{
+  name: "VIXION 155",
+  category: "sport",
+  price: "Rp 31.965.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2022011109442589529O58043.png"
+},
 
-  {
-    name: "WR155R",
-    category: "off-road",
-    price: "Mulai Rp41.675.000",
-    cc: "155 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116110425WR155R.png",
-    official: "https://www.yamaha-motor.co.id/products/category/off-road/"
-  },
+/* ================= OFF ROAD ================= */
 
-  {
-    name: "YZ125X",
-    category: "off-road",
-    price: "Rp100.800.000",
-    cc: "125 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116110640YZ125X.png",
-    official: "https://www.yamaha-motor.co.id/products/category/off-road/"
-  },
+{
+  name: "WR155R",
+  category: "off-road",
+  price: "Rp 41.675.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2026012216283431324H51389.png"
+},
 
-  {
-    name: "YZ250X",
-    category: "off-road",
-    price: "Rp132.500.000",
-    cc: "250 cc",
-    image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/20240116110840YZ250X.png",
-    official: "https://www.yamaha-motor.co.id/products/category/off-road/"
-  }
+{
+  name: "YZ125X",
+  category: "off-road",
+  price: "Rp 100.200.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202606031052219193A.png"
+},
+
+{
+  name: "YZ250X",
+  category: "off-road",
+  price: "Rp 132.500.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202606031053343044T.png"
+},
+
+{
+  name: "YZ250FX",
+  category: "off-road",
+  price: "Rp 140.500.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202606031050479381F.png"
+},
+
+/* ================= MOPED ================= */
+
+{
+  name: "MX KING 150",
+  category: "moped",
+  price: "Rp 29.379.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/202606190939128383S.png"
+},
+
+{
+  name: "JUPITER Z1",
+  category: "moped",
+  price: "Rp 22.771.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2025061108344332282O17129.png"
+},
+
+{
+  name: "VEGA FORCE",
+  category: "moped",
+  price: "Rp 20.445.000",
+  image: "https://www.yamaha-motor.co.id/uploads/products/featured_image/2023060510573539478H29934.png"
+}
 
 ];
 
 
-const productGrid =
-  document.getElementById("productGrid");
+/* ================= RENDER PRODUK ================= */
 
-const search =
-  document.getElementById("search");
+const grid = document.getElementById("productGrid");
+const search = document.getElementById("search");
+const buttons = document.querySelectorAll(".cat");
 
-const catalogCount =
-  document.getElementById("catalogCount");
-
-
-let currentCategory = "semua";
-
-
-/* =====================================================
- WHATSAPP
-===================================================== */
-
-function whatsappLink(name){
-
-  const text =
-    `Halo Irawan Yamaha Official,%0A%0A` +
-    `Saya tertarik dengan motor ini:%0A` +
-    `${name}%0A%0A` +
-    `Mohon informasi harga, promo, DP dan angsuran terbaru.`;
-
-  return `https://wa.me/${WA_NUMBER}?text=${text}`;
-
+function rupiah(text){
+  return text;
 }
 
+function renderProducts(list){
 
-/* =====================================================
- RENDER PRODUCT
-===================================================== */
+  if(!grid) return;
 
-function renderProducts(){
+  grid.innerHTML = "";
 
-  const keyword =
-    search.value.toLowerCase().trim();
+  if(list.length === 0){
 
-
-  const filtered =
-    products.filter(product => {
-
-      const matchCategory =
-        currentCategory === "semua" ||
-        product.category === currentCategory;
-
-      const matchSearch =
-        product.name.toLowerCase().includes(keyword);
-
-      return matchCategory && matchSearch;
-
-    });
-
-
-  catalogCount.textContent =
-    filtered.length;
-
-
-  productGrid.innerHTML = "";
-
-
-  if(filtered.length === 0){
-
-    productGrid.innerHTML = `
-      <div class="empty">
-        <h3>Motor tidak ditemukan</h3>
-        <p>Coba gunakan nama motor lain.</p>
+    grid.innerHTML = `
+      <div class="empty-product">
+        <div>🔎</div>
+        <h3>Unit tidak ditemukan</h3>
+        <p>Coba cari nama motor Yamaha lainnya.</p>
       </div>
     `;
 
     return;
-
   }
 
+  list.forEach((product,index)=>{
 
-  filtered.forEach((product,index) => {
+    const card = document.createElement("article");
 
-    const card =
-      document.createElement("article");
+    card.className = "product-card";
 
-    card.className =
-      "product-card reveal";
+    card.style.animationDelay = `${index * 0.05}s`;
 
-    card.style.animationDelay =
-      `${index * 70}ms`;
+    const waText =
+      `Halo Irawan Yamaha Official, saya ingin konsultasi ${product.name}. Mohon info promo, DP dan angsuran terbaru.`;
 
+    const waLink =
+      `https://wa.me/${WA}?text=${encodeURIComponent(waText)}`;
 
     card.innerHTML = `
 
       <div class="product-image">
 
         <span class="product-category">
-          ${product.category.toUpperCase()}
+          ${product.category.replace("-", " ").toUpperCase()}
         </span>
 
         <img
           src="${product.image}"
-          alt="${product.name}"
+          alt="Yamaha ${product.name}"
           loading="lazy"
-          onerror="this.src='https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&w=1200'"
         >
 
         <div class="image-glow"></div>
 
       </div>
 
+      <div class="product-info">
 
-      <div class="product-body">
-
-        <div class="product-meta">
-          <span>${product.cc}</span>
-          <span>YAMAHA</span>
+        <div class="product-number">
+          ${String(index + 1).padStart(2,"0")}
         </div>
 
-        <h3>
-          ${product.name}
-        </h3>
+        <h3>${product.name}</h3>
+
+        <div class="price-label">
+          MULAI DARI
+        </div>
 
         <div class="product-price">
-          ${product.price}
+          ${rupiah(product.price)}
+        </div>
+
+        <div class="price-note">
+          Harga referensi OTR Jakarta
         </div>
 
         <div class="product-actions">
 
-          <a
+          <button
             class="detail-btn"
-            href="${product.official}"
-            target="_blank"
-            rel="noopener"
-          >
+            onclick="showProduct(${products.indexOf(product)})">
             DETAIL
-          </a>
+          </button>
 
           <a
-            class="wa-small"
-            href="${whatsappLink(product.name)}"
-            target="_blank"
-          >
-            CHAT
+            class="wa-btn"
+            href="${waLink}"
+            target="_blank">
+            WHATSAPP
           </a>
 
         </div>
 
       </div>
-
     `;
 
-
-    productGrid.appendChild(card);
+    grid.appendChild(card);
 
   });
 
 }
 
 
-/* =====================================================
- CATEGORY BUTTON
-===================================================== */
+/* ================= FILTER ================= */
 
-document.querySelectorAll(".cat").forEach(button => {
+let currentCategory = "semua";
 
-  button.addEventListener("click", () => {
+function filterProducts(){
 
-    document
-      .querySelectorAll(".cat")
-      .forEach(btn =>
-        btn.classList.remove("active")
-      );
+  const keyword =
+    search ? search.value.toLowerCase().trim() : "";
+
+  const result = products.filter(product => {
+
+    const categoryMatch =
+      currentCategory === "semua" ||
+      product.category === currentCategory;
+
+    const searchMatch =
+      product.name.toLowerCase().includes(keyword);
+
+    return categoryMatch && searchMatch;
+
+  });
+
+  renderProducts(result);
+
+}
+
+
+buttons.forEach(button => {
+
+  button.addEventListener("click",()=>{
+
+    buttons.forEach(btn =>
+      btn.classList.remove("active")
+    );
 
     button.classList.add("active");
 
     currentCategory =
       button.dataset.category;
 
-    renderProducts();
+    filterProducts();
 
   });
 
 });
 
 
-/* =====================================================
- SEARCH
-===================================================== */
+if(search){
 
-search.addEventListener(
-  "input",
-  renderProducts
-);
-
-
-/* =====================================================
- HERO SLIDER
-===================================================== */
-
-const heroBike =
-  document.getElementById("heroBike");
-
-const heroName =
-  document.getElementById("heroName");
-
-const heroCategory =
-  document.getElementById("heroCategory");
-
-const heroDots =
-  document.getElementById("heroDots");
-
-const nextHero =
-  document.getElementById("nextHero");
-
-
-const heroProducts =
-  products.slice(0,6);
-
-
-let heroIndex = 0;
-
-
-function updateHero(){
-
-  const product =
-    heroProducts[heroIndex];
-
-
-  heroBike.classList.remove("bike-enter");
-
-
-  setTimeout(() => {
-
-    heroBike.src =
-      product.image;
-
-    heroBike.alt =
-      product.name;
-
-    heroName.textContent =
-      product.name;
-
-    heroCategory.textContent =
-      product.category.toUpperCase();
-
-    heroBike.classList.add("bike-enter");
-
-
-  },150);
-
-
-  heroDots.innerHTML =
-    heroProducts.map((_,i) => `
-      <span
-        class="${i === heroIndex ? "active" : ""}"
-      ></span>
-    `).join("");
+  search.addEventListener(
+    "input",
+    filterProducts
+  );
 
 }
 
 
-nextHero.addEventListener("click", () => {
+/* ================= DETAIL POPUP ================= */
 
-  heroIndex++;
+function showProduct(index){
 
-  if(heroIndex >= heroProducts.length){
-    heroIndex = 0;
-  }
+  const product = products[index];
 
-  updateHero();
+  if(!product) return;
 
-});
+  const waText =
+    `Halo Irawan Yamaha Official, saya ingin konsultasi ${product.name}. Mohon info harga promo, DP dan angsuran terbaru.`;
+
+  const waLink =
+    `https://wa.me/${WA}?text=${encodeURIComponent(waText)}`;
+
+  const oldModal =
+    document.querySelector(".unit-modal");
+
+  if(oldModal) oldModal.remove();
+
+  const modal =
+    document.createElement("div");
+
+  modal.className = "unit-modal";
+
+  modal.innerHTML = `
+
+    <div class="unit-modal-bg"></div>
+
+    <div class="unit-modal-box">
+
+      <button class="modal-close">
+        ×
+      </button>
+
+      <div class="modal-image">
+
+        <img
+          src="${product.image}"
+          alt="Yamaha ${product.name}"
+        >
+
+      </div>
+
+      <div class="modal-content">
+
+        <span>
+          ${product.category.toUpperCase()}
+        </span>
+
+        <h2>
+          ${product.name}
+        </h2>
+
+        <p class="modal-price">
+          ${product.price}
+        </p>
+
+        <p class="modal-note">
+          Harga di atas 
+          Untuk OTR Bandung dan promo terbaru,
+          silakan konsultasi melalui WhatsApp.
+        </p>
+
+        <div class="modal-actions">
+
+          <a
+            href="${waLink}"
+            target="_blank"
+            class="modal-wa">
+            CHAT WHATSAPP
+          </a>
+
+          <button
+            class="modal-back">
+            KEMBALI
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+  `;
+
+  document.body.appendChild(modal);
+
+  setTimeout(()=>{
+    modal.classList.add("show");
+  },10);
+
+  modal
+    .querySelector(".modal-close")
+    .onclick = () => closeModal(modal);
+
+  modal
+    .querySelector(".modal-back")
+    .onclick = () => closeModal(modal);
+
+  modal
+    .querySelector(".unit-modal-bg")
+    .onclick = () => closeModal(modal);
+
+}
 
 
-/* klik titik slider */
+function closeModal(modal){
 
-heroDots.addEventListener("click", e => {
+  modal.classList.remove("show");
 
-  const dots =
-    [...heroDots.children];
+  setTimeout(()=>{
+    modal.remove();
+  },250);
 
-  const index =
-    dots.indexOf(e.target);
-
-  if(index >= 0){
-
-    heroIndex = index;
-
-    updateHero();
-
-  }
-
-});
+}
 
 
-/* AUTO SLIDER */
+/* ================= ANIMASI MOUSE ================= */
 
-setInterval(() => {
+document.addEventListener("mousemove",(e)=>{
 
-  heroIndex++;
+  const cards =
+    document.querySelectorAll(".product-card");
 
-  if(heroIndex >= heroProducts.length){
-    heroIndex = 0;
-  }
+  cards.forEach(card => {
 
-  updateHero();
+    const rect =
+      card.getBoundingClientRect();
 
-},6000);
+    if(
+      e.clientX >= rect.left &&
+      e.clientX <= rect.right &&
+      e.clientY >= rect.top &&
+      e.clientY <= rect.bottom
+    ){
 
+      const x =
+        (e.clientX - rect.left) /
+        rect.width - 0.5;
 
-/* =====================================================
- MOBILE MENU
-===================================================== */
+      const y =
+        (e.clientY - rect.top) /
+        rect.height - 0.5;
 
-const menu =
-  document.getElementById("menu");
+      card.style.setProperty(
+        "--mx",
+        `${x * 4}deg`
+      );
 
-const navlinks =
-  document.querySelector(".navlinks");
+      card.style.setProperty(
+        "--my",
+        `${y * -4}deg`
+      );
 
-
-menu.addEventListener("click", () => {
-
-  navlinks.classList.toggle("show");
-
-});
-
-
-document
-  .querySelectorAll(".navlinks a")
-  .forEach(link => {
-
-    link.addEventListener("click", () => {
-
-      navlinks.classList.remove("show");
-
-    });
+    }
 
   });
 
+});
 
-/* =====================================================
- INITIAL
-===================================================== */
 
-renderProducts();
-updateHero();
+/* ================= START ================= */
+
+renderProducts(products);
