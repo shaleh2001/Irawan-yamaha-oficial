@@ -291,7 +291,7 @@ function renderProducts(list){
         </div>
 
         <div class="price-note">
-          Harga referensi OTR Jakarta
+          Harga referensi OTR BANDUNG
         </div>
 
         <div class="product-actions">
